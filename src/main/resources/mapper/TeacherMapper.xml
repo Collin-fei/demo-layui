@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demolayui.mapper.TeacherMapper">
+
+    <!--获取教师ID以及商户ID-->
+    <select id="getTea" resultType="java.util.Map">
+        SELECT TEACHER_NAME,GENDER  FROM P_SCL_TEACHER WHERE PHONE = #{username,jdbcType=VARCHAR} AND PWD = #{password,jdbcType=VARCHAR}
+    </select>
+
+</mapper>
