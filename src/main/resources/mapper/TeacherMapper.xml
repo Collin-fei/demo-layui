@@ -3,8 +3,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demolayui.mapper.TeacherMapper">
 
+    <resultMap type="com.example.demolayui.entity.Teacher" id="TeacherMap">
+        <result property="teacherName" column="TEACHER_NAME" jdbcType="VARCHAR"/>
+        <result property="gender" column="GENDER" jdbcType="VARCHAR"/>
+
+    </resultMap>
+
     <!--获取教师ID以及商户ID-->
-    <select id="getTea" resultType="java.util.Map">
+    <select id="getTea" resultType="com.example.demolayui.entity.Teacher">
         SELECT TEACHER_NAME,GENDER  FROM P_SCL_TEACHER WHERE PHONE = #{username,jdbcType=VARCHAR} AND PWD = #{password,jdbcType=VARCHAR}
     </select>
 

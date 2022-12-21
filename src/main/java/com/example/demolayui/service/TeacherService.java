@@ -1,6 +1,8 @@
 package com.example.demolayui.service;
 
 
+import com.example.demolayui.entity.Teacher;
+
 import java.util.Map;
 import java.util.Set;
 
@@ -20,6 +22,6 @@ public interface TeacherService {
      * @param password
      * @return
      */
-    Map<String, String> getTea(String username, String password);
+    Teacher getTea(String username, String password);
 
 }

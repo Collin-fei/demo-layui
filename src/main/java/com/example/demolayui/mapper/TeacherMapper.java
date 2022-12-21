@@ -1,6 +1,7 @@
 package com.example.demolayui.mapper;
 
 
+import com.example.demolayui.entity.Teacher;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -25,7 +26,7 @@ public interface TeacherMapper {
      * @param password
      * @return
      */
-    Map<String, String> getTea(@Param("username") String username, @Param("password") String password);
+    Teacher getTea(@Param("username") String username, @Param("password") String password);
 
 
 }

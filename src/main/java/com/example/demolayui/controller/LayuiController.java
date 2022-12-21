@@ -1,6 +1,7 @@
 package com.example.demolayui.controller;
 
 
+import com.example.demolayui.entity.Teacher;
 import com.example.demolayui.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -47,8 +48,8 @@ public class LayuiController {
     }
     @RequestMapping("/testDatabase")
     @ResponseBody
-    public Map<String, String> testDatabase() {
-        Map<String, String> teacher = teacherService.getTea("34324","yyf123456");
+    public Teacher testDatabase() {
+        Teacher teacher = teacherService.getTea("34324","yyf123456");
         return teacher;
     }
 
