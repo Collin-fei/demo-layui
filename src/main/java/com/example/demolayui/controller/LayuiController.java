@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Map;
 
 /**
  * @author: Collin
@@ -49,8 +48,7 @@ public class LayuiController {
     @RequestMapping("/testDatabase")
     @ResponseBody
     public Teacher testDatabase() {
-        Teacher teacher = teacherService.getTea("34324","yyf123456");
-        return teacher;
+        return teacherService.getTea("34324","yyf123456");
     }
 
 }

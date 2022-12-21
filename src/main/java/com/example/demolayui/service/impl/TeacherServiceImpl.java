@@ -4,12 +4,9 @@ package com.example.demolayui.service.impl;
 import com.example.demolayui.entity.Teacher;
 import com.example.demolayui.mapper.TeacherMapper;
 import com.example.demolayui.service.TeacherService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-
 import javax.annotation.Resource;
-import java.util.*;
+
 
 /**
  * @ClassName TeacherServiceImpl
@@ -33,10 +30,7 @@ public class TeacherServiceImpl implements TeacherService {
      */
     @Override
     public Teacher getTea(String username, String password) {
-
-        Teacher teacher = teacherMapper.getTea(username,password);
-
-        return teacher;
+        return teacherMapper.getTea(username,password);
     }
 
 

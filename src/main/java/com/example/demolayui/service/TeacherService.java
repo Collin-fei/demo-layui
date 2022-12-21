@@ -3,8 +3,6 @@ package com.example.demolayui.service;
 
 import com.example.demolayui.entity.Teacher;
 
-import java.util.Map;
-import java.util.Set;
 
 /**
  * @ClassName TeacherService

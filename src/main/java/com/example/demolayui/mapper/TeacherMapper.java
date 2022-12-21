@@ -5,8 +5,7 @@ import com.example.demolayui.entity.Teacher;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
-import java.util.Map;
+
 
 /**
  * @ClassName TeacherMapper
